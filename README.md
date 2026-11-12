@@ -1,7 +1,6 @@
 # PINO-Tissue-Biosensing (v10 Final — Double-Blind Archival Package)
 
 **Physics-Informed Neural Operators for Real-Time, Discretization-Invariant Optical Tissue Parameterization and Melanin-Decoupled Edge Biosensing**  
-*Archived DOI: `10.5281/zenodo.14058924` | Anonymous Repository: `https://anonymous.4open.science/r/PINO-Tissue-Biosensing`*
 
 ## Quick Clean-Room Verification
 Run the following two commands from a fresh clone of `github_repo/` to verify byte-for-byte file integrity and reproduce the key benchmark summaries:
