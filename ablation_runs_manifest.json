@@ -1,0 +1,117 @@
+{
+  "repository_doi": "10.5281/zenodo.14058924",
+  "revision": "v10.0-final",
+  "seeds": [
+    42,
+    101,
+    202,
+    303,
+    404
+  ],
+  "int8_calibration_set_size": 1024,
+  "pruned_auxiliary_head_params": 6401,
+  "pruned_auxiliary_head_fp32_bytes": 25604,
+  "pruned_auxiliary_head_int8_bytes": 6401,
+  "pruned_inference_bytes_int8": 258386,
+  "active_dtcm_ram_bytes_int8": 29488,
+  "active_dtcm_ram_kib_int8": 28.8,
+  "active_dtcm_ram_kib_fp32": 76.0,
+  "table1_row9_per_seed": {
+    "seeds": [
+      42,
+      101,
+      202,
+      303,
+      404
+    ],
+    "mu_a_mape_pct": [
+      1.44,
+      1.49,
+      1.46,
+      1.53,
+      1.48
+    ],
+    "mu_s_mape_pct": [
+      1.21,
+      1.25,
+      1.22,
+      1.28,
+      1.24
+    ],
+    "epochs": [
+      81,
+      88,
+      84,
+      93,
+      84
+    ]
+  },
+  "table4_int8_vs_fp32_8optode_per_seed": {
+    "seeds": [
+      42,
+      101,
+      202,
+      303,
+      404
+    ],
+    "fp32_combined_mape_pct": [
+      1.42,
+      1.46,
+      1.43,
+      1.49,
+      1.45
+    ],
+    "int8_combined_mape_pct": [
+      1.47,
+      1.52,
+      1.49,
+      1.56,
+      1.51
+    ],
+    "paired_delta_pp": [
+      0.05,
+      0.06,
+      0.06,
+      0.07,
+      0.06
+    ]
+  },
+  "per_row_run_files": {
+    "R1-a8f3": {
+      "file": "runs/row1_baseline_fno.json",
+      "sha256": "b29f45ebd20bae2382900f3ffbd13d7b0e385bcd45b8230e5ddc8227563effa4"
+    },
+    "R2-c41e": {
+      "file": "runs/row2_cell1_raw_unmasked.json",
+      "sha256": "0fc44f6efdff63da65954680022c711baa43f7a101d3b862a0fb38bacb7ae00f"
+    },
+    "R3-d90b": {
+      "file": "runs/row3_cell2_raw_masked.json",
+      "sha256": "0ff53aa9206a53ec94bcdd57dc0ea0c6cde30297961e50fdae0a6abd0e10ffd6"
+    },
+    "R4-e52a": {
+      "file": "runs/row4_cell3_split_unmasked.json",
+      "sha256": "134f1ff7e27788d24f6c8a653bae1addb36ee03be6790b16c9c4cdf5eda84789"
+    },
+    "R5-f17c": {
+      "file": "runs/row5_unmasked_zerobc.json",
+      "sha256": "6c5133301c5f8090ea03d8afabb352b58225c9809e929bb36303dc6787ecf29d"
+    },
+    "R6-29d4": {
+      "file": "runs/row6_pdeonly_zerobc.json",
+      "sha256": "4bfaf9b18deaf7756307b6ac8a0debf95baf795ec007791d4a0e87aa69ed1451"
+    },
+    "R7-63a1": {
+      "file": "runs/row7_ebconly.json",
+      "sha256": "2ce618d2309d2899304415f53e6ca2130cee9e3ee12fbad957ebdc9b6ccbc320"
+    },
+    "R8-94b8": {
+      "file": "runs/row8_fixed_weights.json",
+      "sha256": "4fd5e67fc222d3a46e2e4a96d2946a4edc4d698cf19f336a2ed08ac833c8b50b"
+    },
+    "R9-7b2d": {
+      "file": "runs/row9_proposed_pino.json",
+      "sha256": "a5773614fb08693e2b487d28c45e60951e6b43b60776f0204b4e9b23b72bf9cd"
+    }
+  }
+}

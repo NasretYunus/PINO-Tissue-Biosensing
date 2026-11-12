@@ -1,0 +1,35 @@
+{
+  "run_id": "R5-f17c",
+  "config": "Unmasked Zero-BC: Phi_0 Split + Unmasked (w=1) + Zero-BC + Dyn. Bal.",
+  "seeds": [
+    42,
+    101,
+    202,
+    303,
+    404
+  ],
+  "mu_a_mape": [
+    3.14,
+    3.25,
+    3.19,
+    3.32,
+    3.2
+  ],
+  "mu_s_mape": [
+    2.61,
+    2.7,
+    2.66,
+    2.77,
+    2.66
+  ],
+  "aux_fluence": "4.14 +- 0.11%",
+  "fwd_rd": "3.98 +- 0.10%",
+  "crosstalk": "0.33 +- 0.02",
+  "epochs": [
+    135,
+    150,
+    143,
+    159,
+    143
+  ]
+}

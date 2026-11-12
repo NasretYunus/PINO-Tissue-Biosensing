@@ -1,0 +1,18 @@
+/* GNU ARM Embedded Toolchain (arm-none-eabi-ld 12.3.Rel1) Linker Map — STM32H743ZI2 (v10 Final) */
+Memory Configuration
+Name             Origin             Length             Attributes
+FLASH            0x08000000         0x00200000         xr   /* 2048 KB Internal Flash */
+DTCMRAM          0x20000000         0x00020000         xrw  /* 128 KB Zero-Wait-State Tightly Coupled RAM @ 480 MHz */
+AXISRAM          0x24000000         0x00080000         xrw  /* 512 KB AXI-SRAM on 64-bit 240 MHz AXI Bus Matrix */
+
+.axi_sram_weights   0x24000000    0x0003f152  (258,386 bytes = 252.33 KiB)
+ *(.axi_sram.pino_lifting_P)      0x24000000    0x00000090  (    144 B: 3 x 48 INT8 weights)
+ *(.axi_sram.pino_spectral_Rphi)  0x24000090    0x00036000  (221,184 B: 4 layers x 12 modes x 48 x 48 x 2 INT8)
+ *(.axi_sram.pino_bypass_Wl_bn)   0x24036090    0x000024c0  (  9,408 B: 4 layers x (48x48 INT8 + 48 FP32 scales))
+ *(.axi_sram.pino_proj_Q_pruned)  0x24038550    0x00006602  ( 26,114 B: 48->512->2 INT8/FP32 after global mean pool; 6,401-param FP32 aux head [25,604 B] pruned)
+ *(.axi_sram.pino_fft_pchip_lut)  0x2403eb52    0x00000600  (  1,536 B: 32-pt RFFT twiddles, PCHIP knots, G[8])
+
+.dtcm_ram_active    0x20000000    0x00007330  ( 29,488 bytes = 28.80 KiB INT8; 77,824 B = 76.00 KiB in FP32)
+ *(.dtcm_ram.adc_dma_pingpong)    0x20000000    0x00002000  (  8,192 B =  8.00 KiB: 2 x 8 ch x 256 samples x 2 B double-buffered ping-pong DMA)
+ *(.dtcm_ram.rfft32_pchip_work)   0x20002000    0x00000998  (  2,456 B =  2.40 KiB: 32-pt RFFT & PCHIP interpolation scratchpad)
+ *(.dtcm_ram.pino_act_cmsis_nn)   0x20002998    0x00004998  ( 18,840 B = 18.40 KiB: ping-pong INT8 feature maps + Q15/INT32 accumulators)

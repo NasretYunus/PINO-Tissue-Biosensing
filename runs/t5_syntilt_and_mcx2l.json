@@ -1,0 +1,44 @@
+{
+  "run_id": "T5-SYNTILT / T5-MCX2L",
+  "bootstrap_replicates": 1000,
+  "synthetic_0p50dB_loglinear_tilt_on_10000_homogeneous_profiles": {
+    "baseline_8optode_mu_a_mape_pct": "1.58 +- 0.04",
+    "tilted_0p50dB_8optode_mu_a_mape_pct": "1.89 +- 0.05",
+    "delta_mape_pp": "+0.31 +- 0.03",
+    "pure_tilt_slope_pp_per_dB": "0.62 +- 0.06",
+    "bootstrap_95ci_pp_per_dB": [
+      0.51,
+      0.73
+    ]
+  },
+  "twolayer_mcx_2500_profiles": {
+    "tau_0p10": {
+      "double_pass_atten_dB": 1.74,
+      "tilt_dB": 0.11,
+      "mu_a_mape": 1.52,
+      "mu_s_mape": 1.28
+    },
+    "tau_0p25": {
+      "double_pass_atten_dB": 4.34,
+      "tilt_dB": 0.27,
+      "mu_a_mape": 1.63,
+      "mu_s_mape": 1.39
+    },
+    "tau_0p50": {
+      "double_pass_atten_dB": 8.69,
+      "tilt_dB": 0.54,
+      "mu_a_mape": 1.84,
+      "mu_s_mape": 1.55
+    },
+    "tau_1p20": {
+      "double_pass_atten_dB": 20.85,
+      "tilt_dB": 1.32,
+      "mu_a_mape": 3.58,
+      "mu_s_mape": 2.74
+    },
+    "regime1_slope_per_dB_tilt": "0.74 pp/dB (95% bootstrap CI: [0.62, 0.86])",
+    "regime1_slope_per_dB_atten": "0.046 pp/dB (95% bootstrap CI: [0.039, 0.053])",
+    "regime2_slope_per_dB_tilt": "2.23 pp/dB (95% bootstrap CI: [1.98, 2.48])",
+    "regime2_slope_per_dB_atten": "0.140 pp/dB (95% bootstrap CI: [0.124, 0.156])"
+  }
+}
